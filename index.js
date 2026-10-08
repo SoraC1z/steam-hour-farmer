@@ -41,7 +41,7 @@ http.createServer((req, res) => {
     res.writeHead(404);
     return res.end("Not found");
   }
-  res.writeHead(authenticated ? 200 : 503, {
+  res.writeHead(200, {
     "Content-Type": "application/json",
     "Cache-Control": "no-store",
   });
